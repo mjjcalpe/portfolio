@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Shopify & Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+  <!-- Interactive background -->
+  <canvas id="bg-canvas"></canvas>
+  <div id="mouse-glow"></div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-ring" id="ring"></div>
+    <div class="cursor-dot" id="dot"></div>
+  </div>
+
+  <!-- Background orbs -->
+  <div class="orb orb1"></div>	
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <!-- Nav -->
+  <nav>
+    <a href="#hero" class="logo">Martin James<span> Calpe</span></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-label">Available for work</div>
+    <h1>
+      <span class="line">Web</span>
+      <span class="line"><span class="highlight">Developer</span></span>
+    </h1>
+    <p class="hero-sub">
+      Building <b>performant storefronts</b> and <b>full-stack web apps</b> —
+      from Shopify themes to ML-powered platforms. Based in the Philippines 🇵🇭
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- Ticker -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <span>Shopify Development</span>
+      <span>Machine Learning</span>
+      <span>Web Development</span>
+      <span>Firebase</span>
+      <span>Random Forest</span>
+      <span>Full-Stack Dev</span>
+      <span>UI / UX</span>
+      <span>Booking Systems</span>
+      <span>Shopify Development</span>
+      <span>Machine Learning</span>
+      <span>Web Development</span>
+      <span>Firebase</span>
+      <span>Random Forest</span>
+      <span>Full-Stack Dev</span>
+      <span>UI / UX</span>
+      <span>Booking Systems</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="reveal">
+      <div class="section-tag">About</div>
+      <h2>Developer who builds things that work.</h2>
+      <div class="about-text">
+        <p>I'm a <b>Shopify Developer</b> and <b>full-stack web developer</b> passionate about crafting digital experiences that are both functional and beautifully designed.</p>
+        <p>My journey started with a <b>capstone project</b> merging web development with machine learning — building a web app powered by <b>Random Forest</b> algorithms, deployed on <b>Firebase</b>. That experience ignited a love for both frontend craftsmanship and intelligent systems.</p>
+        <p>Today, I specialize in building <b>custom Shopify storefronts</b> and web applications — from booking systems to e-commerce platforms — always pushing for clean code and great UX.</p>
+      </div>
+    </div>
+    <div class="stats-grid reveal" style="transition-delay:.2s">
+      <div class="stat-card">
+        <div class="stat-num">2+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Projects Shipped</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">ML</div>
+        <div class="stat-label">Integrated</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Lines of Code</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="skills-header reveal">
+      <div class="section-tag">Skills</div>
+      <h2>Tools & Technologies</h2>
+    </div>
+    <div class="skill-clusters reveal" style="transition-delay:.15s">
+      <div>
+        <div class="skill-cluster-title">// Shopify & E-Commerce</div>
+        <div class="skill-pills">
+          <span class="pill accent">Shopify</span>
+          <span class="pill accent">Liquid</span>
+          <span class="pill accent">Dawn Theme</span>
+          <span class="pill accent">Shopify CLI</span>
+          <span class="pill accent">Shopify Apps</span>
+          <span class="pill accent">Metafields</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cluster-title">// Frontend</div>
+        <div class="skill-pills">
+          <span class="pill">HTML5</span>
+          <span class="pill">CSS3</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Bootstrap</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">Responsive Design</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cluster-title">// Backend & Cloud</div>
+        <div class="skill-pills">
+          <span class="pill purple">Firebase</span>
+          <span class="pill purple">Google Cloud</span>
+          <span class="pill purple">Node.js</span>
+          <span class="pill purple">PHP</span>
+          <span class="pill purple">MySQL</span>
+          <span class="pill purple">REST APIs</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cluster-title">// Machine Learning</div>
+        <div class="skill-pills">
+          <span class="pill red">Random Forest</span>
+          <span class="pill red">Python</span>
+          <span class="pill red">scikit-learn</span>
+          <span class="pill red">Data Analysis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="reveal">
+      <div class="section-tag">Projects</div>
+      <h2>Things I've Built</h2>
+    </div>
+    <div class="projects-grid reveal" style="transition-delay:.1s">
+
+      <!-- ── Project 01: Icon Earth ── -->
+      <div class="project-card" id="card-1">
+        <div class="project-header" onclick="toggleCard('card-1')">
+          <div class="project-header-left">
+            <div class="project-icon">🌿</div>
+            <div class="project-meta">
+              <div class="project-number">Project 01 — Shopify</div>
+              <div class="project-title">Icon Earth</div>
+            </div>
+          </div>
+          <div class="project-header-right">
+            <div class="project-status">
+              <span class="status-dot live"></span>
+              Live Store
+            </div>
+            <button class="expand-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <div>
+              <p class="project-desc">
+                A fully customized <strong>Shopify storefront</strong> for Icon Earth — an eco-conscious brand. Developed custom sections, optimized the theme for performance and conversions, and implemented a clean, nature-inspired aesthetic using <strong>Liquid templating</strong> and modern CSS.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Shopify</span>
+                <span class="project-tag">Liquid</span>
+                <span class="project-tag">CSS / JS</span>
+                <span class="project-tag purple">E-Commerce</span>
+                <span class="project-tag purple">Theme Dev</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://iconearth.com/" target="_blank" rel="noopener" class="project-link">
+                  <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Visit Live Store
+                </a>
+              </div>
+            </div>
+            <div class="preview-pane">
+              <div class="preview-bar">
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-url">iconearth.com</span>
+              </div>
+              <div class="preview-iframe-wrap">
+                <img src="project2.png" alt="Icon Earth Preview" class="preview-screenshot">
+                <div class="preview-overlay">
+                  <a href="https://iconearth.com/" target="_blank" rel="noopener" class="preview-visit">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Open
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Project 02: Pure Luxco ── -->
+      <div class="project-card" id="card-2">
+        <div class="project-header" onclick="toggleCard('card-2')">
+          <div class="project-header-left">
+            <div class="project-icon">✨</div>
+            <div class="project-meta">
+              <div class="project-number">Project 02 — Shopify</div>
+              <div class="project-title">Pure Luxco</div>
+            </div>
+          </div>
+          <div class="project-header-right">
+            <div class="project-status">
+              <span class="status-dot live"></span>
+              Live Store
+            </div>
+            <button class="expand-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <div>
+              <p class="project-desc">
+                A premium <strong>luxury Shopify store</strong> for Pure Luxco. Built a refined, high-end shopping experience with custom product sections, smooth animations, and carefully tuned layout components to reflect the brand's upscale identity — all powered by <strong>Shopify Liquid</strong>.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Shopify</span>
+                <span class="project-tag">Liquid</span>
+                <span class="project-tag">CSS / JS</span>
+                <span class="project-tag purple">Luxury Brand</span>
+                <span class="project-tag purple">E-Commerce</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://pureluxco.com/" target="_blank" rel="noopener" class="project-link">
+                  <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Visit Live Store
+                </a>
+              </div>
+            </div>
+            <div class="preview-pane">
+              <div class="preview-bar">
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-url">pureluxco.com</span>
+              </div>
+              <div class="preview-iframe-wrap">
+                <img src="project1.png" alt="Icon Earth Preview" class="preview-screenshot">
+                <div class="preview-overlay">
+                  <a href="https://pureluxco.com/" target="_blank" rel="noopener" class="preview-visit">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Open
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Project 03: Booking Platform ── -->
+      <div class="project-card" id="card-3">
+        <div class="project-header" onclick="toggleCard('card-3')">
+          <div class="project-header-left">
+            <div class="project-icon">📅</div>
+            <div class="project-meta">
+              <div class="project-number">Project 03 — Freelance</div>
+              <div class="project-title">Booking & Reservation Platform</div>
+            </div>
+          </div>
+          <div class="project-header-right">
+            <div class="project-status">
+              <span class="status-dot"></span>
+              Not Deployed
+            </div>
+            <button class="expand-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <div>
+              <p class="project-desc">
+                A custom <strong>booking and reservation web application</strong> built for a freelance client. Features appointment scheduling, real-time availability management, user authentication, and an intuitive admin dashboard — crafted from scratch for a seamless end-to-end experience.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Web App</span>
+                <span class="project-tag purple">Full Stack</span>
+                <span class="project-tag">Booking System</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag red">Freelance</span>
+              </div>
+            </div>
+            <div class="preview-pane">
+              <div class="preview-bar">
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-url">booking-platform — local</span>
+              </div>
+              <div class="preview-iframe-wrap">
+					<img src="project3.png" alt="Booking Platform Screenshot" class="preview-screenshot">
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Project 04: ML Capstone ── -->
+      <div class="project-card" id="card-4">
+        <div class="project-header" onclick="toggleCard('card-4')">
+          <div class="project-header-left">
+            <div class="project-icon">🤖</div>
+            <div class="project-meta">
+              <div class="project-number">Project 04 — Internship Capstone</div>
+              <div class="project-title">ML-Powered Web Application</div>
+            </div>
+          </div>
+          <div class="project-header-right">
+            <div class="project-status">
+              <span class="status-dot"></span>
+              Sunset
+            </div>
+            <button class="expand-btn" aria-label="Expand">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <div>
+              <p class="project-desc">
+                An internship capstone project combining web development with machine learning. Built a full-stack web app deploying a <strong>Random Forest classification algorithm</strong> via Firebase Cloud Functions. Handled authentication, Firestore database, and a clean prediction UI — sunset due to Google Cloud billing requirements.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag red">Random Forest</span>
+                <span class="project-tag red">Machine Learning</span>
+                <span class="project-tag red">Python</span>
+                <span class="project-tag">Cloud Functions</span>
+              </div>
+            </div>
+            <div class="preview-pane">
+              <div class="preview-bar">
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-url">firebase — capstone (offline)</span>
+              </div>
+              <div class="preview-placeholder">
+                <span>☁️</span>
+                Offline — Cloud billing sunset
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="reveal">
+      <div class="section-tag">Experience</div>
+      <h2>Career Timeline</h2>
+    </div>
+    <div class="timeline reveal" style="transition-delay:.15s">
+      <div class="timeline-item">
+        <div class="timeline-date">Present</div>
+        <div class="timeline-role">Shopify Developer</div>
+        <div class="timeline-company">Freelance / Client Work</div>
+        <div class="timeline-desc">
+          Developing and customizing Shopify storefronts for clients. Working with Liquid templating,
+          theme customization, section schemas, metafields, and performance optimization to build
+          high-converting e-commerce experiences.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Previous</div>
+        <div class="timeline-role">Web Developer (Internship)</div>
+        <div class="timeline-company">Internship — Capstone Project</div>
+        <div class="timeline-desc">
+          Built a full-stack web application integrated with a Random Forest machine learning model
+          deployed on Firebase. Handled frontend UI, backend logic via Cloud Functions, Firestore
+          database integration, and Firebase Authentication.
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Ongoing</div>
+        <div class="timeline-role">Freelance Web Developer</div>
+        <div class="timeline-company">Independent Projects</div>
+        <div class="timeline-desc">
+          Developed custom web solutions for various clients including a booking and reservation
+          platform, applying full-stack development skills to deliver tailored digital solutions.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-tag contact-tag reveal">Contact</div>
+    <h2 class="contact-title reveal" style="transition-delay:.1s">Let's Build<br/>Something.</h2>
+    <p class="contact-sub reveal" style="transition-delay:.2s">
+      Open to new opportunities, collaborations, and interesting projects.
+      Drop me a message anytime.
+    </p>
+   <div class="contact-links reveal" style="transition-delay:.3s">
+  
+	<div class="email-group">
+		<a href="#" id="contact-link" class="contact-link">
+		<svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+			<path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+		</svg>
+		<span id="email-display">james.calpe32@gmail.com</span>
+		</a>
+		<span id="copy-toast" class="copy-toast">Email copied!</span>
+	</div>
+
+	<a href="https://github.com/mjjcalpe" target="_blank" rel="noopener" class="contact-link">
+		<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+		github.com/mjjcalpe
+	</a>
+
+	<a href="https://www.linkedin.com/in/martinjamescalpe/" target="_blank" rel="noopener" class="contact-link">
+		<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+		linkedin.com/in/martinjamescalpe/
+	</a>
+	</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <span class="footer-dot">◆</span> Designed & Built with intention</p>
+    <p style="font-size:.65rem; color: var(--text-dim);">Web Developer <span class="footer-dot">·</span> PH</p>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // ── Interactive Particle Network Background ──
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, particles = [], mouse = { x: -9999, y: -9999 };
+
+    const PARTICLE_COUNT = 88;
+    const CONNECTION_DIST = 140;
+    const MOUSE_DIST = 180;
+
+    function resize() {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', () => { resize(); initParticles(); });
+
+    class Particle {
+      constructor() { this.reset(true); }
+      reset(initial) {
+        this.x = Math.random() * W;
+        this.y = initial ? Math.random() * H : (Math.random() > 0.5 ? -10 : H + 10);
+        this.vx = (Math.random() - 0.5) * 0.35;
+        this.vy = (Math.random() - 0.5) * 0.35;
+        this.r = Math.random() * 1.8 + 0.6;
+        this.baseAlpha = Math.random() * 0.4 + 0.15;
+        this.alpha = this.baseAlpha;
+        this.pulse = Math.random() * Math.PI * 2;
+        this.pulseSpeed = Math.random() * 0.02 + 0.008;
+      }
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        this.pulse += this.pulseSpeed;
+        this.alpha = this.baseAlpha + Math.sin(this.pulse) * 0.1;
+        // mouse repel
+        const dx = this.x - mouse.x, dy = this.y - mouse.y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < MOUSE_DIST) {
+          const force = (MOUSE_DIST - dist) / MOUSE_DIST * 0.6;
+          this.x += (dx / dist) * force * 1.8;
+          this.y += (dy / dist) * force * 1.8;
+        }
+        if (this.x < -20) this.x = W + 20;
+        if (this.x > W + 20) this.x = -20;
+        if (this.y < -20) this.y = H + 20;
+        if (this.y > H + 20) this.y = -20;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0,255,195,${this.alpha})`;
+        ctx.fill();
+      }
+    }
+
+    function initParticles() {
+      particles = [];
+      for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+    }
+    initParticles();
+
+    // Draw grid lines
+    function drawGrid() {
+      const gridSize = 80;
+      const t = Date.now() * 0.0003;
+      ctx.save();
+      for (let x = 0; x <= W; x += gridSize) {
+        const alpha = 0.022 + Math.sin(t + x * 0.01) * 0.008;
+        ctx.beginPath();
+        ctx.moveTo(x, 0); ctx.lineTo(x, H);
+        ctx.strokeStyle = `rgba(0,255,195,${alpha})`;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+      for (let y = 0; y <= H; y += gridSize) {
+        const alpha = 0.022 + Math.sin(t + y * 0.01) * 0.008;
+        ctx.beginPath();
+        ctx.moveTo(0, y); ctx.lineTo(W, y);
+        ctx.strokeStyle = `rgba(0,255,195,${alpha})`;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+
+    // Draw connections between nearby particles
+    function drawConnections() {
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const a = particles[i], b = particles[j];
+          const dx = a.x - b.x, dy = a.y - b.y;
+          const dist = Math.sqrt(dx*dx + dy*dy);
+          if (dist < CONNECTION_DIST) {
+            const alpha = (1 - dist / CONNECTION_DIST) * 0.18;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.strokeStyle = `rgba(0,255,195,${alpha})`;
+            ctx.lineWidth = 0.8;
+            ctx.stroke();
+          }
+        }
+        // Connect to mouse
+        const mdx = particles[i].x - mouse.x, mdy = particles[i].y - mouse.y;
+        const mdist = Math.sqrt(mdx*mdx + mdy*mdy);
+        if (mdist < MOUSE_DIST) {
+          const alpha = (1 - mdist / MOUSE_DIST) * 0.45;
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.strokeStyle = `rgba(0,255,195,${alpha})`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+          // Highlight particle near mouse
+          ctx.beginPath();
+          ctx.arc(particles[i].x, particles[i].y, particles[i].r + 1, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(0,255,195,${alpha * 1.5})`;
+          ctx.fill();
+        }
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, W, H);
+      drawGrid();
+      drawConnections();
+      particles.forEach(p => { p.update(); p.draw(); });
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    // ── Mouse glow follows cursor ──
+    const mouseGlow = document.getElementById('mouse-glow');
+    window.addEventListener('mousemove', e => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+      mouseGlow.style.left = e.clientX + 'px';
+      mouseGlow.style.top = e.clientY + 'px';
+    });
+
+    // ── Custom cursor ──
+    const cursor = document.getElementById('cursor');
+    const dot = document.getElementById('dot');
+    const ring = document.getElementById('ring');
+
+    let mouseX = 0, mouseY = 0;
+    let ringX = 0, ringY = 0;
+
+    window.addEventListener('mousemove', e => {
+      mouseX = e.clientX; mouseY = e.clientY;
+      dot.style.left = mouseX + 'px';
+      dot.style.top = mouseY + 'px';
+    });
+
+    function animateRing() {
+      ringX += (mouseX - ringX) * 0.13;
+      ringY += (mouseY - ringY) * 0.13;
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    // ── Expandable project cards ──
+    function toggleCard(id) {
+      const card = document.getElementById(id);
+      const isOpen = card.classList.contains('open');
+      document.querySelectorAll('.project-card').forEach(c => c.classList.remove('open'));
+      if (!isOpen) card.classList.add('open');
+    }
+
+    // ── Scroll reveal ──
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // ── Active nav link ──
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id');
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
+      });
+    });
+
+	document.addEventListener('DOMContentLoaded', () => {
+    const contactLink = document.getElementById('contact-link');
+    const toast = document.getElementById('copy-toast');
+    const email = "james.calpe32@gmail.com";
+
+    contactLink.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // 1. Copy to clipboard
+        navigator.clipboard.writeText(email).then(() => {
+            // 2. Show the toast
+            toast.classList.add('show');
+            
+            // 3. Hide it after 2 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        });
+
+        // 4. Try to open the email app as well
+        window.location.href = `mailto:${email}`;
+    });
+});
+  </script>
+</body>
+</html>

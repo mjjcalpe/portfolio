@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /private/
+Sitemap: https://mjcalpe-portfolio.web.app/sitemap.xml
